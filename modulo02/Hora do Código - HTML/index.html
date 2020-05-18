@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BEM CSS Exemplo</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			ul {
+				list-style: none;
+			}
+			body {
+				background: #EEEEEE;
+				font-family: sans-serif;
+			}
+			.card {
+				margin: 20px auto;
+				width: 320px;
+			}
+			.card__header {
+				height: 100px;
+				background: #E0466B;
+			}
+			.card__content {
+				padding: 30px 35px;
+				background: #FFF;
+			}
+			.card__list {
+				display: flex;
+				margin-bottom: 25px;
+			}
+			.card__item {
+				background: #E6E6E6;
+				margin-right: 7px;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			.card__item:last-child {
+				margin-right: 0;
+			}
+			.card__item.card__item--active {
+				background: #D4D4D4;
+				font-weight: bold;
+			}
+			.card__description {
+				margin-bottom: 35px;
+			}
+			.card__button {
+				background: #2C8973;
+				border: none;
+				font-size: 16px;
+				padding: 10px 20px;
+				color: #FFF;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="cards">
+			<div class="card">
+				<div class="card__header"></div>
+				<div class="card__content">
+					<ul class="card__list">
+						<li class="card__item card__item--active">Adobe XD</li>
+						<li class="card__item">Figma</li>
+						<li class="card__item">Sketch</li>
+					</ul>
+					<p class="card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veritatis quasi impedit quos commodi nesciunt temporibus saepe repellat sapiente accusantium.
+					</p>
+					<button class="card__button">Visit the link</button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
